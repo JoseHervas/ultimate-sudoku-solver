@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Ultimate Sudoku Solver</title>
+    	{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static '/bootstrap/css/bootstrap.css' %}" />
+  		<link rel="stylesheet" type="text/css" href="{% static '/bootstrap/css/bootstrap-responsive.css' %}" />
+  		<style>
+    	body {
+      	padding-top: 20px;
+    	}
+  		</style>
+		<script src="{% static '/bootstrap/js/jquery.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-transition.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-alert.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-modal.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-dropdown.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-scrollspy.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-tab.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-tooltip.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-popover.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-button.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-collapse.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-carousel.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap-typeahead.js' %}"></script>
+	</head>
+	<body>
+		<div class="container">
+			{% block main %}{% endblock main %}
+		</div>
+	</body>
+</html>

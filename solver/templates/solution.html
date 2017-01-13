@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block main %}
+	<h1>Sudoku solved!</h1>
+	<br/>
+	<p>Here is how your sudoku should look like...</p>
+	<br/>
+	<table>
+		{% for id in order %}
+			{% for key, value in solution.items %}
+				{%if key == id %}
+			        <td>{{value}}</td>      
+			    	{%if forloop.parentloop.counter|divisibleby:"9" %}
+			    		<tr><th></th></tr>
+					{%endif%}	
+				{%endif%}
+			{%endfor%}
+		{%endfor%}
+	</table>
+	<br/>
+	<a href="/"><input type="submit" value="Solve another sudoku" /></a>
+{% endblock main %}
