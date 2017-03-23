@@ -1,11 +1,10 @@
-==========================================================
 Web app developed with django to solve ANY possible sudoku
 ==========================================================
 
 This app relies on a depth-first-search algorithm complemented with a constraint propagation. 
 It has passed all the tests with a success rate of 100%.
 
-An online demo of the application is here: http://josehervas.pythonanywhere.com/ultimate-sudoku-solver/
+<a href="http://josehervas.pythonanywhere.com/ultimate-sudoku-solver/">An online demo of the application is here</a>
 
 Python version: 3.4
 
